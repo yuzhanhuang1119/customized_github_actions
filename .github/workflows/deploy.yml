@@ -69,12 +69,4 @@ jobs:
         with:
           bucket: gha-custom-action-hosting-joe
           dist-folder: ./dist
-          bueckt-region: ap-southeast-1
-#  information:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Get code
-#        uses: actions/checkout@v3
-##        without get code step github actions will fail
-#      - name: Run custom action
-#        uses: ./github/actions/deploy-s3-javascript
+          bucket-region: ap-southeast-1
