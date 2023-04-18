@@ -68,9 +68,9 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         with:
-          INPUT_BUCKET: gha-custom-action-hosting-joe
-          INPUT_DIST-FOLDER: ./dist
-          INPUT_BUCKET-REGION: ap-southeast-1
+          bucket: gha-custom-action-hosting-joe
+          dis-folder: ./dist
+          bucket-region: ap-southeast-1
       - name: Output information
         run: |
           echo "Live URL: ${{ steps.deploy.outputs.website-url }}"
